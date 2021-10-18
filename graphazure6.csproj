@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="bestilmere.common.azure" Version="0.3.0" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="12.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
   </ItemGroup>
 

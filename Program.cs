@@ -1,4 +1,5 @@
 using bestilmere.common.azure.DI;
+using graphazure6;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
         .AddBestilmereAzure()
         .AddControllers();
+
+builder.Services
+            .AddGraphQLServer()
+            .AddQueryType<Query>();
+            
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -25,5 +31,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapGraphQL();
 
 app.Run();
