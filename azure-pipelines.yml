@@ -33,8 +33,9 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
- - task: AzureWebApp@1
-   inputs:
+- task: AzureWebApp@1
+  displayName: 'web app publish'
+  inputs:
       azureSubscription: '<Azure service connection>'
       appType: 'webAppLinux'
       appName: 'graphazure6'
