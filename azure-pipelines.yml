@@ -16,6 +16,8 @@ steps:
     packageType: 'sdk'
     version: '6.0.x'
     includePreviewVersions: true
+- task: NuGetAuthenticate@0
+  displayName: 'NuGet Authenticate'
 - task: DotNetCoreCLI@2
   displayName: build
   inputs:
