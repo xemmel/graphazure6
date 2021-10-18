@@ -19,6 +19,11 @@ steps:
 - task: NuGetAuthenticate@0
   displayName: 'NuGet Authenticate'
 - task: DotNetCoreCLI@2
+  displayName: 'restore'
+  inputs:
+    command: restore
+    vstsFeed: 'imail/imailfeed'
+- task: DotNetCoreCLI@2
   displayName: build
   inputs:
     command: build
