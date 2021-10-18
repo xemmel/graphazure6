@@ -22,3 +22,4 @@ steps:
   displayName: build
   inputs:
     command: build
+    vstsFeed: 'imail/imailfeed'
