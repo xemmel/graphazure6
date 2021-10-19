@@ -36,7 +36,7 @@ steps:
 - task: AzureWebApp@1
   displayName: 'web app publish'
   inputs:
-      azureSubscription: 'Pay-As-You-Go(0617cd7e-3534-470e-8afe-8c58072eb52c)'
+      azureSubscription: '$(subscription)'
       appType: 'webAppLinux'
       appName: 'graphazure6'
       package: '$(System.DefaultWorkingDirectory)/**/*.zip'
