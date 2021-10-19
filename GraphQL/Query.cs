@@ -7,7 +7,7 @@ namespace graphazure6
 {
     public class Query
     {
-        public string GetVersion() => "0.3.0";
+        public string GetVersion() => "0.3.1";
 
         [UseFiltering]
         public Task<IEnumerable<ResourceGroupModel>?> GetResourceGroupsAsync(
