@@ -13,6 +13,10 @@ builder.Services
             .AddGraphQLServer()
             .AddQueryType<Query>()
             .AddFiltering()
+
+            .AddType<ResourceGroupsQueryType>()
+            .AddType<ResourceGroupsGraphType>()
+
             ;
             
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

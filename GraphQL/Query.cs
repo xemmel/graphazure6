@@ -7,13 +7,8 @@ namespace graphazure6
 {
     public class Query
     {
-        public string GetVersion() => "0.3.2";
+        public string GetVersion() => "0.3.3";
 
-        [UseFiltering]
-        public Task<IEnumerable<ResourceGroupModel>?> GetResourceGroupsAsync(
-                    [Service] IResourceGroupHandler resourceGroupHandler,
-                    CancellationToken cancellationToken)
-                    => resourceGroupHandler.GetResourceGroupsAsync(cancellationToken: cancellationToken);
 
         [UseFiltering]
         public Task<IEnumerable<RoleDefinitionModel>?> GetRoleDefitionsAsync(
