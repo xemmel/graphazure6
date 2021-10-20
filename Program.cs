@@ -17,6 +17,9 @@ builder.Services
             .AddType<ResourceGroupsQueryType>()
             .AddType<ResourceGroupsGraphType>()
 
+            .AddType<ResourcesQueryType>()
+
+
             ;
             
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
