@@ -7,7 +7,7 @@ namespace graphazure6
 {
     public class Query
     {
-        public string GetVersion() => "0.3.5";
+        public string GetVersion() => "0.3.6";
 
 
         [UseFiltering]
