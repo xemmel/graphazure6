@@ -19,6 +19,10 @@ builder.Services
 
             .AddType<ResourcesQueryType>()
 
+            .AddType<ActivityLogQueryType>()
+
+            .AddType<RoleDefinitionsQueryType>()
+
 
             ;
             
